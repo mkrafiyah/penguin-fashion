@@ -5,13 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
      <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+     <style>
+       .font-bebas{
+        font-family: 'Bebas Neue', sans-serif;
+x
+       }
+     </style>
 </head>
 <body>
     <!--This is the nav section-->
-    <header>
-        <nav>
+    <header class="bg-[#FFFBF0] px-32">
+        <nav class="flex justify-around py-10">
+            <div class="w-3/6">
+                <img class="w-2/6" src="icons/logo.png" alt="">
+                
+            </div>
+            <div class=" w-3/6 list-none flex justify-around font-medium text-[#3E3E3E]">
+                <li>Home</li>
+                <li>Product</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </div>
 
         </nav>
+        <!--banner section-->
+        <section class="flex justify-center items-center space-x-8 py-10">
+            <div class="space-y-3">
+                <h2 class="text-7xl uppercase font-bebas"> 
+                    <span class="text-[#FABE4C]">Be the Penguins</span> 
+                    <br>
+                    <span class="text-[#3E3E3E]">of Winter</span></h2>
+                    <p class="text-[#3E3E3E]  font-normal">Lorem Ipsum is simply dummy text of the printing <br> 
+                        and typesetting industry.</p>
+                        <button class="py-4 px-8 rounded-xl uppercase text-white font-medium bg-gradient-to-r from-[#A4BC46] to-[#85A019]"> <img class="inline w-7" src="icons/shopping-cart 1.png" alt="">Buy Now</button>
+            </div>
+            <div>
+                <img src="images/model.png" alt="">
+            </div>
+        </section>
     </header>
     <main></main>
     <footer></footer>
